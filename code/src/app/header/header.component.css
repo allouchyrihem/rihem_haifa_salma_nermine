@@ -1,0 +1,47 @@
+#p1{
+    font-family: Calisto MT; 
+    font-style:oblique;
+    font-size:76px;
+    color:#BC9F3D;
+  
+}
+#p2{
+    font-family: Calisto MT; 
+    font-style:oblique;
+    font-size: 66px;
+    color: #707070;;
+  
+}
+button{
+    background-color: #BC9F3D;
+    color:white;
+    size:100px
+}
+#img1{
+        width: 450px;
+        height: 450px;
+    
+    
+}
+@media (min-width: 576px) { 
+     
+   }
+
+  
+  @media (min-width: 768px) { 
+    
+    
+ }
+
+   
+  
+  
+  @media (min-width: 992px) { 
+     
+   }
+  
+
+  @media (min-width: 1200px) { 
+     
+   }
+  

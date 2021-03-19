@@ -1,0 +1,32 @@
+img{
+    margin-left: 43%;
+     margin-right: 30%;
+  }
+ .card-title{
+     color:#BC9F3D;
+     text-align:center;
+     font-family: Calisto MT; 
+     font-style:oblique;
+     font-size: 36px;
+ }
+ .card-text{
+     font-size: 16px;
+     font-family: Calisto MT; 
+ }
+ #p1{
+     font-family: Calisto MT; 
+     font-style:oblique;
+     font-size: 36px;
+     text-align:center;
+     color:#BC9F3D;
+     
+   
+ }
+ #p2{
+     font-family: Calisto MT; 
+     font-style:oblique;
+     font-size: 26px;
+     text-align:center;
+     color: #707070;;
+   
+ }

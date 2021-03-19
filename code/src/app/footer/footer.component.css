@@ -1,0 +1,10 @@
+footer{
+    background-color: #e1e1e1;
+    font: italic 1.2em "Fira Sans", serif;
+    text-align: center;
+    
+}
+footer:hover {
+    background-color: #BC9F3D;
+    color: white;
+}
