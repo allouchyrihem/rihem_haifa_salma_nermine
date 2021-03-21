@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./services.component.css']
 })
 export class ServicesComponent implements OnInit {
-  pic1="assets/dish.svg"
-  pic2="assets/pizza.svg"
-  pic3="assets/truck.svg"
+  pic1="assets/Capture3.PNG"
+  pic2="assets/Capture2.PNG"
+  pic3="assets/Capture.PNG"
   title="Services"
   soustitle="Our amazing services"
   constructor() { }

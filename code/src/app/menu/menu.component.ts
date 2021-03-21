@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class MenuComponent implements OnInit {
   title="Menu"
   soustitle="Menu of the week"
+  panier="assets/panier.PNG"
+
   constructor() { }
 
   ngOnInit(): void {

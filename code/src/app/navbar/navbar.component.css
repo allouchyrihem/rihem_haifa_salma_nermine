@@ -1,6 +1,15 @@
+.nav{
+    max-width: 1024px;
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 img{
-    width: 80px;
-    height: 90px;
+    width: 120px;
+    height: 70px;
+    
 }
 
 ul {
@@ -28,12 +37,29 @@ li a:hover {
     color: white;
 }
 #i1{
-    width:20px;
-    height:20px;
+    width:40px;
+    height:40px;
     
 }
 #i2{
-    width:20px;
-    height:20px;
+    width:30px;
+    height:30px;
     
 }
+body.dark-theme{
+    --title-color: #F1F3F2;
+    --text-color: #C7D1CC;
+    --body-color: #1D2521;
+    --container-color: #27302C;
+  }
+  
+  /*========== Button Dark/Light ==========*/
+  .change-theme{
+    position: absolute;
+    right: 1rem;
+    top: 1.8rem;
+    color: var(--text-color);
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  

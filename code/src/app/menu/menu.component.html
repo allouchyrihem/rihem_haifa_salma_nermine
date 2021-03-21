@@ -1,8 +1,36 @@
-<div class="container">
-    <div class="row">
-      <div class="col-md-12">
-              <p id="p1">{{title}}</p>
-              <p id ="p2">{{soustitle}}</p>
+<section class="menu section bd-container" id="menu">
+  <h1  id="p1">{{title}}</h1>
+  <h2  id="p2">{{soustitle}}</h2>
+</section>
+
+  <div class="menu__container bd-grid">
+      <div class="row">
+      <div class="col-md-4 menu__content">
+          <img src="assets/plate1.png" alt="" class="menu__img">
+          <h3 class="menu__name">Barbecue salad</h3>
+          <span class="menu__detail">Delicious dish</span>
+          <span class="menu__preci">$22.00</span>
+          <a href="#" class="button "><img id="menu__button" [src]="panier"></a>
       </div>
+      
+      <div class=" col-md-4 menu__content">
+          <img src="assets/plate2.png" alt="" class="menu__img">
+          <h3 class="menu__name">Salad with fish</h3>
+          <span class="menu__detail">Delicious dish</span>
+          <span class="menu__preci">$12.00</span>
+          <a href="#" class="button"><img id="menu__button" [src]="panier"></a>
       </div>
-    </div>
+
+      <div class=" col-md-4 menu__content">
+          <img src="assets/plate3.png" alt="" class="menu__img">
+          <h3 class="menu__name">Spinach salad</h3>
+          <span class="menu__detail">Delicious dish</span>
+          <span class="menu__preci">$9.50</span>
+          <a href="#" class="button"><img id="menu__button" [src]="panier"></a>
+      </div>
+    
+  </div>
+  <div class="row"><br>
+      <button type="button" class="btn">Check all the menu </button>
+  </div>
+  </div>

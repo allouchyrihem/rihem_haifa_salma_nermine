@@ -3,6 +3,8 @@ span{
     font-style:oblique;
     font-size:66px;
     color:#BC9F3D;
+    animation-duration: 3s;
+    animation-name: slidein;
   
 }
 h2{
@@ -11,11 +13,15 @@ h2{
     font-size: 36px;
     color: #707070;
     opacity:60%;
+    animation-duration: 3s;
+    animation-name: slidein;
 }
 
 .about__img{
     width: 400px;
     height: 400px;
+    animation-duration: 3s;
+    animation-name: slidein;
 }
 button{
     background-color: #BC9F3D;
@@ -26,4 +32,17 @@ p{
     font-family: Calisto MT;
     color: #707070;
     font-size:20px;
+    animation-duration: 3s;
+    animation-name: slidein;
 }
+@keyframes slidein {
+    from {
+      margin-top: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-bottom: 0%;
+      width: 90%;
+    }
+  }
