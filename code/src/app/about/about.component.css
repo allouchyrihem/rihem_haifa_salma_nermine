@@ -18,10 +18,12 @@ h2{
 }
 
 .about__img{
-    width: 400px;
+    width: 500px;
     height: 400px;
     animation-duration: 3s;
     animation-name: slidein;
+    border-radius: 8px;
+
 }
 button{
     background-color: #BC9F3D;

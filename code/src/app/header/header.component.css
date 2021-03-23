@@ -2,6 +2,7 @@
     font-family: Calisto MT; 
     font-style:oblique;
     font-size:76px;
+    text-align: center;
     color:#BC9F3D;
    
 }
@@ -10,6 +11,7 @@
     font-style:oblique;
     font-size: 66px;
     color: #707070;
+    text-align: center;
 
     
   
@@ -35,12 +37,14 @@ button{
     background-color: #BC9F3D;
     color:white;
     size:100px;
-   
+   margin-left: 2cm;
+   text-align: center;
+  font-size: 16px;  
     
 }
 #img1{
-        width: 470px;
-        height: 470px;
+        width: 500px;
+        height: 550px;
         animation-duration: 3s;
         animation-name: slidein;
     
