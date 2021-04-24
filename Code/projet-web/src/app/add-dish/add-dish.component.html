@@ -1,0 +1,64 @@
+<section class=" section adddish" id="add">
+    <div class="container add  ">
+     
+            <form >
+                        <h2 class="section-title ">Add Dish</h2> 
+                        
+                            
+                        <div class="  row ">
+  
+                            <div class="col-xl-6 col-md-6">
+                                <input type="file" (change) = onSelectFile($event)>
+                            </div>
+                            <div class="col-xl-6 col-md-6">
+                                <div>
+                                    <label for="name_dish">Dish Name</label><br>
+                                  <input type="text" id="name_dish" id = "nom" >
+                                </div>
+                                <div>
+                                    <label for="prix_plat">Dish Prise</label><br>
+                                    <input type="text"  id="prix_plat" id = "price"> 
+                                </div>
+                                <div>
+                                  <label for="type_dish">Dish Type</label>
+                                  <br>
+                                  <select name="" id="type_dish" id = "type">
+                                       <option value="dessert">dessert</option>
+                                       <option value="salade">salade</option>
+                                       <option value="dish">dish</option>
+                                  </select>
+                                </div>
+                                <div>
+                                    <label for="des_plat">Dish description</label><br>
+                                    <textarea name="" id="des_plat" cols="30" rows="2" id = "desc"></textarea>
+  
+                                </div>
+                                
+                               
+                               
+                            </div>
+                                
+                                   
+                                   
+                            
+                                    
+                      
+                            </div>
+                            <div class="row">
+                                <div class="col-md-offset-9 col-md-3">
+                                    <button type="button" class="btn" (click) = "Add()">ADD </button>
+                            
+                                </div>
+                            
+                            </div>
+                        
+                   
+               
+                
+    
+                        </form>
+    </div>
+    
+    
+    </section>
+    

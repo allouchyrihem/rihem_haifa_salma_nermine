@@ -1,0 +1,30 @@
+<section class="menu section bd-container" id="menu">
+    <span class="section-subtitle">Special</span>
+    <h2 class="section-title">Menu of the week</h2>
+
+    <div class="menu__container bd-grid">
+        <div class="menu__content">
+            <img src="{{salade.img_dish}}" alt="" style="height: 70%;width: 100%;border-radius: 50%;margin :10px">
+            <h3 class="menu__name">{{salade.nom_dish}}</h3>
+            <span class="menu__detail">{{salade.desc_dish}}</span>
+            <span class="menu__preci">${{salade.price_dish}}</span>
+            <a  class="button menu__button" (click) = "addToCartSalade(salade.id_dish)">+</a>
+        </div>
+
+        <div class="menu__content">
+            <img src="{{dish.img_dish}}" alt=""style="height: 70%;width: 100%;border-radius: 50%;margin :10px">
+            <h3 class="menu__name">{{dish.nom_dish}}</h3>
+            <span class="menu__detail">{{dish.desc_dish}}</span>
+            <span class="menu__preci">${{dish.price_dish}}</span>
+            <a  class="button menu__button" (click) = "addToCartDish(dish.id_dish)">+</a>
+        </div>
+        
+        <div class="menu__content">
+            <img src="{{dessert.img_dish}}" alt="" style="height: 70%;width: 100%;border-radius: 50% ;margin :10px" >
+            <h3 class="menu__name">{{dessert.nom_dish}}</h3>
+            <span class="menu__detail">{{dessert.desc_dish}}</span>
+            <span class="menu__preci">${{dessert.price_dish}}</span>
+            <a  class="button menu__button" (click) = "addToCartDessert(dessert.id_dish)">+</a>
+        </div>
+    </div>
+</section>

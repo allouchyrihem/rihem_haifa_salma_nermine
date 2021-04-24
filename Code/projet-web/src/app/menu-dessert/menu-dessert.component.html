@@ -1,0 +1,17 @@
+<section class="menu section bd-container" id="salade">
+    
+    <h2 class="section-title">dessert</h2>
+
+    <div class="menu__container bd-grid">
+        <div class="menu__content" *ngFor = "let rep of salades">
+            <img src="{{rep.img_dish}}" alt="" class="menu__img">
+            <h3 class="menu__name">{{rep.nom_dish}}</h3>
+            <span class="menu__detail">{{rep.desc_dish}}</span>
+            <span class="menu__preci">${{rep.price_dish}}</span>
+            <a (click) = "delete(rep.id_dish)" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+        </div>
+
+        
+    </div>
+</section>
+

@@ -1,0 +1,118 @@
+<app-navbar></app-navbar>
+<div class="wrap cf">
+    <h1 class="projTitle">Ekteb<span>-eli</span> Theb lehne</h1>
+    <div class="heading cf">
+      <h1>My Cart</h1>
+      <a href="#" class="continue">Continue Shopping</a>
+    </div>
+    <div class="cart">
+  <!--    <ul class="tableHead">
+        <li class="prodHeader">Product</li>
+        <li>Quantity</li>
+        <li>Total</li>
+         <li>Remove</li>
+      </ul>-->
+      <ul class="cartWrap">
+        <div class="heading cf"*ngIf = "this.sn >0">
+          <h1>Salade</h1>
+         
+        </div>
+        <li class="items odd">
+         
+      <div class="infoWrap" *ngIf = "this.sn >0"> 
+          <div class="cartSection">
+          <img src="{{salade.img_dish}}" alt="" class="itemImg" />
+            <p class="itemNumber">#QUE-007544-002</p>
+            <h3>{{salade.nom_dish}}</h3>
+          
+             <p> <b>{{this.sn}}</b> x ${{salade.price_dish}}</p>
+          
+            <p class="stockStatus"> In Stock</p>
+          </div>  
+      
+          
+          <div class="prodTotal cartSection">
+            <p>${{this.sn * salade.price_dish}}</p>
+          </div>
+                <div class="cartSection removeWrap">
+             <a href="#" class="remove">x</a>
+          </div>
+        </div>
+        </li>
+        <div class="heading cf" *ngIf = "this.dn >0">
+          <h1>Dish</h1>
+         
+        </div>
+        <li class="items even" *ngIf = "this.dn >0">
+          
+         <div class="infoWrap"> 
+          <div class="cartSection">
+           
+          <img src="{{dish.img_dish}}" alt="" class="itemImg" />
+            <p class="itemNumber">#QUE-007544-002</p>
+            <h3>{{dish.nom_dish}}</h3>
+          
+            <p> <b>{{this.dn}}</b> x ${{dish.price_dish}}</p>
+          
+            <p class="stockStatus"> In Stock</p>
+          </div>  
+      
+          
+          <div class="prodTotal cartSection">
+            <p>${{this.dn * dish.price_dish}}</p>
+          </div>
+                <div class="cartSection removeWrap">
+             <a href="#" class="remove">x</a>
+          </div>
+        </div>
+        </li>
+        <div class="heading cf" *ngIf = "this.desn >0">
+          <h1>Dessert</h1>
+         
+        </div>
+              <li class="items odd" *ngIf = "this.desn >0">
+               <div class="infoWrap"> 
+          <div class="cartSection">
+              
+          <img src="{{dessert.img_dish}}" alt="" class="itemImg" />
+            <p class="itemNumber">#QUE-007544-002</p>
+            <h3>{{dessert.nom_dish}}</h3>
+          
+            <p> <b>{{this.desn}}</b> x ${{dessert.price_dish}}</p>
+          
+            <p class="stockStatus"> In Stock</p>
+          </div>  
+      
+          
+          <div class="prodTotal cartSection">
+            <p>${{this.desn * dessert.price_dish}}</p>
+          </div>
+                      <div class="cartSection removeWrap">
+             <a href="#" class="remove">x</a>
+          </div>
+                </div>
+        </li>
+        
+        
+        
+        <!--<li class="items even">Item 2</li>-->
+   
+      </ul>
+    </div>
+    
+    <div class="promoCode"><label for="promo">Have A Promo Code?</label><input type="text" name="promo" placholder="Enter Code" />
+    <a href="#" class="btn"></a></div>
+    
+    <div class="subtotal cf">
+      <ul>
+        <li class="totalRow"><span class="label">Subtotal</span><span class="value">${{(this.desn * dessert.price_dish) + (this.dn * dish.price_dish) + (this.sn * salade.price_dish)}}</span></li>
+        
+            <li class="totalRow"><span class="label">Shipping</span><span class="value">{{this.shipping}}</span></li>
+        
+              <li class="totalRow"><span class="label">Tax</span><span class="value">${{this.tax}}</span></li>
+              <li class="totalRow final"><span class="label">Total</span><span class="value">${{((this.desn * dessert.price_dish) + (this.dn * dish.price_dish) + (this.sn * salade.price_dish))+ tax  + shipping}}</span></li>
+        <li class="totalRow"><a href="/Checkout" class="btn continue">Checkout</a></li>
+      </ul>
+    </div>
+  </div>
+  <app-footer></app-footer>
